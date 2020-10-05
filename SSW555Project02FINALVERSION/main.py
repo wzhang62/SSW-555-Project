@@ -11,12 +11,6 @@ for line in text_file:
   level_number = line[:1]
   
   line = line.split()
-##This is user story to add functionality to print all males in a genealogy
-  if line[1] == "NAME":
-    name = line[2]
-  while line[2] != "M" or "F":
-    if line[2] == "M":
-      print(name)
 
   for word in key_words:
       if word in line:
@@ -26,6 +20,13 @@ for line in text_file:
   for burb in levels:
       if burb in line:
         lerp = burb
+
+##This is user story to add functionality to print all males in a genealogy
+  if line[1] == "NAME":
+    name = line[2]
+  while line[2] != "M" or "F":
+    if line[2] == "M":
+      print(name)
 
   print('<-- |' + derp + '|' + lerp + '|' + y)
   print("-->", line)
