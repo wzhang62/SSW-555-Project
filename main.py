@@ -37,6 +37,8 @@ for line in text_file:
 ##Will print all the children of a family tree, may need to be separate function.
     if line[1] == "CHIL":
       name = line
-##Total number of deaths,
+##Total number of deaths in the family
+
+##Host database via MySQL or Sqlite
 """
 
