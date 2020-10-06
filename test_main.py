@@ -1,7 +1,5 @@
-
 import unittest
 from python_gedcom_reader import gedcom_file_reader
-
 """
 The user story:
 A complete look at a user's genealogical history.
@@ -19,14 +17,13 @@ class TestGedcomReader(unittest.TestCase):
 
     def test_output_format(self):
         ##Checks the first line of the gedcom file
-        self.assertEqual(get_maleS_func(gedcom.ged), "<--|Bobby|Portis|M\n 
-        <--|Matt|")
+        self.assertEqual(get_maleS_func(gedcom.ged), "")
 
     def test_length_of_gedcom_file(self):
         self.assertEqual(gedcom_file_reader(gedcom_file_reader), "<--|INDI|1|")
 
     def test_length_of_gedcom_file(self):
-        self.assertEqual(person_age(30), 30)
+        self.assertEqual(make_a_function(30), 30)
 
 
 if __name__ == "__main__":
